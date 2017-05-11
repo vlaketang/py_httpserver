@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+    .cities {
+        background-color:yellow;
+        float:left;
+        color:white;
+        margin:20px;
+        padding:20px;
+    }
+    .info {
+        background-color:green;
+        float:left;
+        color:white;
+        margin:20px;
+        padding:20px;
+    }
+        input{
+            border: 1px solid #ccc;
+            padding: 7px 0px;
+            width:200px;
+            border-radius: 3px; /*css3属性IE不支持*/
+            padding-left:5px;
+            float:right;
+    }
+    inputt{
+            border: 1px solid #ccc;
+            padding: 7px 0px;
+            width:100px;
+            height:50px;
+            padding-left:5px;
+            float:right;
+    }
+    #nav {
+        line-height:20px;
+        background-color:#eeeeee;
+        float:left;
+        height:500px;
+        width:50px;
+        padding:10px;
+    }
+    info {
+        line-height:20px;
+        background-color:green;
+        float:left;
+        height:500px;
+        width:50px;
+        padding:10px;
+    }
+    #section {
+        float:left;
+        padding:10px;
+}
+    </style>
+
+</head>
+<body style="background-color:#eeeeee;">
+    <h1 style="text-align:center;font-family:verdana;color:black">qq填写timesheets账号设置</h1><hr />
+    <div class="cities" id="section">
+        <p><a href="http://xxx.xxx.com/" target="_blank">timesheets</a></p>
+        <p><img src="/i/laosiji.jpg" width="150" height="150" /> </p>
+        <p>-----------------------------</p>
+        <p><img src="/i/siji.jpg" width="150" height="150" /></p>
+
+        <p style="font-family:verdana;color:red;fond-size:50px;">
+            若有疑问请邮件咨询：
+            <a href="mailto:vlaketang@sina.com?subject=add timesheets person info" >发送邮件</a>
+        </p>
+    </div>
+    <div>
+        <p>使用说明：</p>
+        <p>ts [-olh] [-m &#60;time&#62;] [-t &#60;time&#62;] [-d &#60;description&#62;]</p>
+        <p>-o:表示此次填写的为加班时间;</p>
+        <p>-l:表示请假,默认描述"ask for leave"</p>
+        <p>-m:表示要填写一个月的时间，如(ts -m 2016.12)则表示填写2016年12月所有的timesheets，除了星期六和星期天;</p>
+        <p>ps:还未完善法定节假日，如果知道怎么判断当天是法定节假的，望不吝赐教</p>
+        <p>-j:jobname (0-50),默认为初始设置</p>
+        <p>-n:显示各个jobnane对应的编码，用于j的参数</p>
+        <p>-s:填写小时的区间，以杠(-)分割，如：从9点到15:30，9:00-15:30/9-15:30</p>
+        <p>-t:timesheets填写时间，默认当天，格式以点或者斜杠(./)分割年月日 如：2016.12.8或者9/8;</p>
+        <p>-d:timesheets的描述内容，默认填写添加账号时设置内容,使用双引号("")括起;</p>
+        <p>添加成功之后在qq群请使用英文输入法输入该命令;</p>
+        <p>用[]括起的表示可选项，&#60;&#62;括起的表示参数；</p>
+    </div>
+    <p><a href="cgi-bin/info.py">设置账号</a></p>
+    <!--<p><a href="cgi-bin/info.py">修改账号</a></p>-->
+    <!--<p><a href="cgi-bin/info.py">删除账号</a></p>-->
+</body>
+</html>
